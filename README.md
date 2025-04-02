@@ -30,7 +30,8 @@ Incluez le fichier d'en-tête dans votre projet :
 #include “ft_printf.h”
 Exemple d'utilisation :
 ```
-int main(void) { ft_printf(“Hello %s!\n”, “World”); return 0; }
+int main(void) 
+{   ft_printf(“Hello %s!\n”, “World”);   return 0; }
 ```
 
 ## Structure du Projet
