@@ -14,18 +14,24 @@ La fonction `ft_printf` prend en charge les spécificateurs suivants :
 - **%%** : Affiche un pourcentage.
 
 ## Prototype
-int ft_printf(const char *format, …);
+`int ft_printf(const char *format, …);`
+
 La fonction retourne le nombre total de caractères imprimés ou une valeur négative en cas d'erreur.
 
 ## Installation et Compilation
 Clonez le projet depuis GitHub et compilez-le avec `make` :
-git clone <URL_du_projet> cd ft_printf make
+
+git clone <URL_du_projet>
+ cd ft_printf
+ make
 
 ## Utilisation
 Incluez le fichier d'en-tête dans votre projet :
 #include “ft_printf.h”
 Exemple d'utilisation :
+```
 int main(void) { ft_printf(“Hello %s!\n”, “World”); return 0; }
+```
 
 ## Structure du Projet
 | Fichier          | Description                          | Responsabilité                   |
