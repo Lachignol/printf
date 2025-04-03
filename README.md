@@ -22,35 +22,22 @@ La fonction retourne le nombre total de caractères imprimés ou une valeur nég
 Clonez le projet depuis GitHub et compilez-le avec `make` :
 
 git clone <URL_du_projet>
+
  cd ft_printf
+ 
  make
 
 ## Utilisation
 Incluez le fichier d'en-tête dans votre projet :
+
 #include “ft_printf.h”
+
 Exemple d'utilisation :
 ```
 int main(void) 
-{   ft_printf(“Hello %s!\n”, “World”);   return 0; }
+{
+  ft_printf(“Hello %s!\n”, “World”);
+   return 0;
+ }
 ```
-
-## Structure du Projet
-| Fichier          | Description                          | Responsabilité                   |
-|------------------|--------------------------------------|----------------------------------|
-| `ft_printf.c`    | Implémentation principale            | Traitement des formats et affichage |
-| `parse_format.c` | Analyse des spécificateurs           | Gestion des options de format   |
-| `print_char.c`   | Impression des caractères et chaînes | Gestion des `%c` et `%s`        |
-| `print_numbers.c`| Impression des nombres               | Gestion des `%d`, `%i`, `%u`, `%x`, `%X` |
-| `utils.c`        | Fonctions utilitaires                | Aides diverses pour l'impression |
-| `Makefile`       | Automatisation de la compilation     | Génération de la bibliothèque   |
-
-## Tests
-Le projet a été testé avec Francinette et divers cas spécifiques pour garantir sa robustesse.
-
-## Ressources Utiles
-- Tutoriel sur `printf`: YouTube - Glootie.
-- Guide sur les fonctions variadiques : Blog Perhonen.
-
-## Auteur
-Projet réalisé dans le cadre du cursus 42. N'hésitez pas à poser vos questions ou à contribuer !
 
